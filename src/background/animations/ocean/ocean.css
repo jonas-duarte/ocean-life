@@ -1,0 +1,23 @@
+@keyframes ocean {
+  0% {
+    background-color: #001a33;
+  }
+  5% {
+    background-color: #004080;
+  }
+  25% {
+    background-color: #0059b3;
+  }
+  45% {
+    background-color: #004080;
+  }
+  50% {
+    background-color: #001a33;
+  }
+  75% {
+    background-color: #000520;
+  }
+  100% {
+    background-color: #001a33;
+  }
+}

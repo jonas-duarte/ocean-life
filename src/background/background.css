@@ -1,0 +1,54 @@
+@import "./sky.css";
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  position: absolute;
+}
+
+.layer {
+  width: 100%;
+  background-color: transparent;
+  position: absolute;
+}
+
+/* Ocean */
+@import "./animations/ocean/ocean.css";
+.ocean {
+  position: relative;
+  /* fazer animação para ir de acordo com o sol (entre 20 e -20) */
+  background: linear-gradient(-20deg, #064273, #1da2d8, #7fcdff);
+  background: black;
+  width: 100%;
+  height: 5000px;
+  overflow: hidden;
+
+  animation: ocean 150s infinite;
+  animation-timing-function: linear;
+}
+
+@import "./animations/ocean/jellyfish.css";
+.swimming {
+  position: relative;
+  animation: left-to-right 30s infinite;
+  animation-timing-function: linear;
+}
+
+.jellyfish {
+  position: relative;
+  background-image: url(../resources/jellyfish1.png);
+  width: 50px;
+  height: 60px;
+  background-size: cover;
+
+  animation: floating 5s infinite;
+  animation-timing-function: linear;
+}
+
+.fish1 {
+  position: relative;
+  background-image: url(../resources/goldDropsy.png);
+  width: 50px;
+  height: 60px;
+  background-size: cover;
+}

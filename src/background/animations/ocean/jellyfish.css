@@ -1,0 +1,23 @@
+@keyframes left-to-right {
+  0% {
+    left: 5%;
+  }
+  50% {
+    left: 95%;
+  }
+  100% {
+    left: 5%;
+  }
+}
+
+@keyframes floating {
+  0% {
+    top: 20px;
+  }
+  50% {
+    top: 80px;
+  }
+  100% {
+    top: 20px;
+  }
+}

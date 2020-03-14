@@ -1,0 +1,85 @@
+/* Sky */
+@import "./animations/sky/sky.css";
+.sky {
+  position: relative;
+  background-color: lightblue;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+
+  animation: sky 150s infinite;
+  animation-timing-function: linear;
+}
+
+@import "./animations/sky/sun.css";
+.sun {
+  background-color: yellow;
+  width: 100%;
+  height: 100px;
+  border: 1px solid #fdb038;
+  border-radius: 9999px;
+}
+
+.moon {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+
+  position: relative;
+  top: calc(100% - 200px);
+  border-radius: 9999px;
+}
+
+.moon > div {
+  width: 80px;
+  height: 80px;
+
+  background-color: transparent;
+
+  border-radius: 9999px;
+
+  animation: sky 150s infinite;
+  animation-timing-function: linear;
+}
+
+.sun-rotation-radious {
+  position: relative;
+  top: 10px;
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 250vw;
+
+  transform: rotate(-200deg);
+
+  animation: sun 150s infinite;
+  animation-timing-function: linear;
+}
+
+@import "./animations/sky/plane.css";
+.plane-container {
+  position: absolute;
+  left: 600px;
+  animation: plane 150s infinite;
+}
+
+.plane {
+  position: relative;
+  background-image: url(../resources/plane.png);
+  width: 120px;
+  height: 100px;
+  background-size: cover;
+}
+
+.plane-billboard {
+  position: relative;
+  width: 600px;
+  height: 49px;
+  position: fixed;
+  background-color: white;
+  text-align: center;
+  padding: 1px;
+
+  font: 20px monospace;
+
+  animation: plane-billboard 150s infinite;
+}
